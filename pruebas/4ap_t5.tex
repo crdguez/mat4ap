@@ -1,0 +1,152 @@
+\documentclass[addpoints,spanish, 12pt,a4paper]{exam}
+\pointpoints{punto}{puntos}
+\hpword{Puntos:}
+\vpword{Puntos:}
+\htword{Total}
+\vtword{Total}
+\hsword{Resultado:}
+\hqword{Ejercicio:}
+\vqword{Ejercicio:}
+
+%\printanswers
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{eurosym}
+\usepackage{yhmath}
+%\usepackage[spanish,es-lcroman, es-tabla, es-noshorthands]{babel}
+
+\usepackage{verbatim}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+
+\usepackage{graphicx}
+\graphicspath{{../img/}} 
+
+\newcommand{\class}{Matemáticas 4º Aplicadas}
+\newcommand{\examdate}{\today}
+\newcommand{\examnum}{Expresiones algebraicas}
+\newcommand{\tipo}{A}
+
+
+\newcommand{\timelimit}{50 minutos}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
+
+\pagestyle{head}
+\firstpageheader{\includegraphics[width=0.2\columnwidth]{header_left}}{\textbf{Departamento de Matemáticas\linebreak \class}\linebreak \examnum}{\includegraphics[width=0.1\columnwidth]{header_right}}
+\runningheader{\class}{\examnum}{Página \thepage\ of \numpages}
+\runningheadrule
+
+\pointsinrightmargin % Para poner las puntuaciones a la derecha. Se puede cambiar. Si se comenta, sale a la izquierda.
+\extrawidth{-2.4cm} %Un poquito más de margen por si ponemos textos largos.
+\marginpointname{ \emph{\points}}
+
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} }
+\textbf{Nombre:} \makebox[3.5in]{\hrulefill} & \textbf{Fecha:}\makebox[1in]{\hrulefill} \\
+ & \\
+\textbf{Tiempo: \timelimit} & Tipo: \tipo 
+\end{tabular*}
+\rule[2ex]{\textwidth}{2pt}
+Esta prueba tiene \numquestions\ ejercicios. La puntuación máxima es de \numpoints. 
+La nota final de la prueba será la parte proporcional de la puntuación obtenida sobre la puntuación máxima. Para la evaluación de pendientes de 3ºESO o 2ºPMAR se tendrán en cuenta los apartados 1, 2, 3 y 6.a y 6.c: 
+
+\begin{center}
+
+
+\addpoints
+ %\gradetable[h][questions]
+	\pointtable[h][questions]
+\end{center}
+
+\noindent
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{questions}
+
+\question Indica el coeficiente, la parte literal y el grado de los siguientes monoimios.
+ 
+\begin{parts}
+\part [1] $A=6x^3$
+
+\begin{solution}$ $\end{solution}
+\part [1] $B=-3x$
+
+\begin{solution}$ $\end{solution}
+\part [1] $C=4x^3$
+
+\begin{solution}$ $\end{solution}
+\end{parts}
+
+\addpoints
+
+\question Dados los monomios $A=6x^3$, $B=-3x$, $C=4x^3$, calcula:
+\begin{parts}
+\part [1] $(C-A)\cdot B$
+
+\begin{solution}$ $\end{solution}
+\part [1] $\dfrac{B\cdot C}{A}$
+
+\begin{solution}15,96/0,28=57\end{solution}
+
+\part [1] $\dfrac{A^2}{2B}$
+\begin{solution}15,96/0,28=57\end{solution}
+
+\end{parts}
+\addpoints
+
+
+\question [2] Opera y simplifica la siguiente expresión: $$\left(2x^2-3x+1\right)\left(2x-1\right)-\left(4x^3-8x^2+1\right) $$
+\begin{solution}
+$5x-2$
+\end{solution}
+
+\question [2] Multiplica por 6 esta expresión y simplifica: $$\dfrac{2x^2-1}{2}-\dfrac{x-1}{3}-\dfrac{1-x}{6}$$
+\begin{solution}
+$ 6x^2-x-2$
+\end{solution}
+
+\question  Determina el cociente y el resto de las siguientes divisiones:
+\begin{parts}
+\part [1] $\left(-3x^4+2x^3-6x^2+x-2\right):\left(x-1\right) $
+
+\begin{solution}$ $\end{solution}
+\part [1] $\left(-3x^4+6x^2+x-2\right):\left(x+1\right) $
+
+\begin{solution} \end{solution}
+
+\part [2] $\left(-3x^4+6x^2+x-2\right):\left(x+2\right) $
+\begin{solution} \end{solution}
+
+\end{parts}
+\addpoints
+
+\question Expresa algebraicamente y simplifica los siguientes enunciados:
+\begin{parts}
+\part [1] La suma de dos números sabiendo que uno es 14 cm mayor que el otro
+
+\begin{solution}  \end{solution}
+\part [1] El aŕea de un rectángulo cuya base mide 2 cm más que la altura
+
+\begin{solution} \end{solution}
+
+\part [2] El área de un rombo sabiendo que la longitud de una diagonal es el doble de la otra 
+\begin{solution} \end{solution}
+
+\part [2] El perímetro de un rombo sabiendo que la longitud de una diagonal es el doble de la otra 
+\begin{solution} \end{solution}
+
+\end{parts}
+
+
+\addpoints
+
+\end{questions}
+
+\end{document}
