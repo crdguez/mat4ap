@@ -1,0 +1,194 @@
+\documentclass[addpoints,spanish, 12pt,a4paper]{exam}
+\pointpoints{punto}{puntos}
+\hpword{Puntos:}
+\vpword{Puntos:}
+\htword{Total}
+\vtword{Total}
+\hsword{Resultado:}
+\hqword{Ejercicio:}
+\vqword{Ejercicio:}
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes, calc, shapes, arrows, math, babel}
+
+%\printanswers
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{eurosym}
+\usepackage{yhmath}
+%\usepackage[spanish,es-lcroman, es-tabla, es-noshorthands]{babel}
+
+\usepackage{verbatim}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+
+\usepackage{graphicx}
+\graphicspath{{../img/}} 
+
+\newcommand{\class}{Matemáticas 4º Aplicadas}
+\newcommand{\examdate}{\today}
+\newcommand{\examnum}{Recuperación 3ªEv.}
+\newcommand{\tipo}{A}
+
+
+\newcommand{\timelimit}{50 minutos}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
+
+\pagestyle{head}
+\firstpageheader{\includegraphics[width=0.2\columnwidth]{header_left}}{\textbf{Departamento de Matemáticas\linebreak \class}\linebreak \examnum}{\includegraphics[width=0.1\columnwidth]{header_right}}
+\runningheader{\class}{\examnum}{Página \thepage\ of \numpages}
+\runningheadrule
+
+\pointsinrightmargin % Para poner las puntuaciones a la derecha. Se puede cambiar. Si se comenta, sale a la izquierda.
+\extrawidth{-2.4cm} %Un poquito más de margen por si ponemos textos largos.
+\marginpointname{ \emph{\points}}
+
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} }
+\textbf{Nombre:} \makebox[3.5in]{\hrulefill} & \textbf{Fecha:}\makebox[1in]{\hrulefill} \\
+ & \\
+\textbf{Tiempo: \timelimit} & Tipo: \tipo 
+\end{tabular*}
+\rule[2ex]{\textwidth}{2pt}
+Esta prueba tiene \numquestions\ ejercicios. La puntuación máxima es de \numpoints. 
+La nota final de la prueba será la parte proporcional de la puntuación obtenida sobre la puntuación máxima. 
+
+\begin{center}
+
+
+\addpoints
+ %\gradetable[h][questions]
+	\pointtable[h][questions]
+\end{center}
+
+\noindent
+\textbf{NOTA:} Los problemas se han de resolver mediante ecuaciones o sistemas. Y los ejercicios mediante métodos diferentes a la resolución por tanteo.
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{questions}
+
+\question Resuelve las siguientes ecuaciones
+\begin{parts}
+%solve(Eq(2*(x-3)-5*x+7,11*(1-x)-(1+3*x)-x))
+\part[1] $2(x-3)-5x+7=11(1-x)-(1+3x)-x$
+\begin{solution}
+$x=\frac{3}{4}$
+\end{solution}
+\part[1] $x+\dfrac{3(x-2)}{9}=\dfrac{5(x-1)}{4}+\dfrac{7}{12}$
+\begin{solution}
+$x=0$
+\end{solution}
+\part[1] $x^2-2x-8=0$  
+\begin{solution} $x_1=4$, $x_2=-2$ 
+\end{solution}
+\begin{comment}
+\part[2] $15-(x+2)^2=(x-3)^2+2x$
+\begin{solution}
+$x=1 \land x=-1$
+\end{solution}
+\end{comment}
+\end{parts}
+
+\question Resolver los sistemas de ecuaciones que siguen:
+\begin{parts}
+\part[1] $\left. \begin{gathered}
+	  4x - 2y = 16 \hfill \\
+	  3x - 7y = 1 \hfill \\ 
+	\end{gathered}  \right\}$
+\begin{solution} x=5; y=2 \end{solution}
+\begin{comment}
+\part[2] $\left. \begin{gathered}
+	  \frac{x}{2} - \frac{y}{3} = 2 \hfill \\
+	  \frac{{x - 1}}{3} + \frac{{y - 2}}{2} = \frac{{13}}{6} \hfill \\ 
+	\end{gathered}  \right\}$
+\begin{solution} x=6; y=3 \end{solution}
+\end{comment}
+\end{parts}
+
+\question[1] Cuatro barras de pan y seis litros de leche cuestan 6,80 ; tres barras de pan y cuatro
+litros de leche cuestan 4,70. ¿Cuánto vale una barra de pan? ¿Cuánto cuesta un
+litro de leche?
+\begin{solution} $\mathrm{~} \begin{cases} 4 x + 6 y = 680\\3 x + 4 y = 470\end{cases} \to \begin{pmatrix}50, & 80\end{pmatrix}$\end{solution}
+
+\question Una compañía de teléfonos me cobra una cantidad fija al mes: 2 \euro . Además me cobran 50 centimos por cada hora de llamadas. Queremos reflejar en forma de función la factura mensual (lo que pago al mes)
+\begin{parts}
+\part[1] ¿Cuáles son la variables dependientes e independientes de la función? Haz una tabla de valores que refleje dicha variable
+\begin{solution}
+$x$ = tiempo, $y$ = dinero \\
+\begin{center}
+\begin{tabular}{|c |c |}\hline
+$x$ & $y$\\ 
+\hline
+$1$&$2.5$\\
+\hline
+$2$&$3$\\
+\hline
+$3$&$3.5$\\
+\hline
+$4$&$4$\\
+\hline
+\end{tabular}
+\end{center}
+\end{solution}
+
+\part[1] Representa gráficamente los valores anteriores y únelos para determinar la gráfica de la función\\
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm, scale=0.6]
+\draw [color=lightgray,dash pattern=on 1pt off 1pt, xstep=1cm,ystep=1cm] (-3.6,-3.4) grid (20.1,10.1);
+\draw[<->,color=black] (-3.6,0) -- (20.1,0);
+\foreach \x in {-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20}
+\draw[shift={(\x,0)},color=black] (0pt,1pt) -- (0pt,-1pt) node[below] {\footnotesize $\x$};
+\draw[<->,color=black] (0,-3.43158220601634095) -- (0,10.1);
+\foreach \y in {-3,-2,-1,1,2,3,4,5,6,7,8,9,10}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+%\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+%\clip(-0.6129302567150502,-0.43158220601634095) rectangle (9.010648940148005,7.8783927087822985);
+\end{tikzpicture}
+\begin{solution}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm, scale=0.4]
+\draw [color=lightgray,dash pattern=on 1pt off 1pt, xstep=1cm,ystep=1cm] (-3.6,-3.4) grid (20.1,10.1);
+\draw[<->,color=black] (-3.6,0) -- (20.1,0);
+\foreach \x in {-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20}
+\draw[shift={(\x,0)},color=black] (0pt,1pt) -- (0pt,-1pt) node[below] {\footnotesize $\x$};
+\draw[<->,color=black] (0,-3.43158220601634095) -- (0,10.1);
+\foreach \y in {-3,-2,-1,1,2,3,4,5,6,7,8,9,10}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+%\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+%\clip(-0.6129302567150502,-0.43158220601634095) rectangle (9.010648940148005,7.8783927087822985);
+\draw[->, color=red, domain=0  :16 + 0.1]    plot (\x,{1/2*(\x) + 2}) node[right] {};
+\end{tikzpicture}
+
+\end{solution}
+\part[1] Da la expresión analítica (o algebraica) de la función. Con dicha expresión calcula lo que me facturarían un mes que hablara 30 horas
+\begin{solution} $y=0.5x+2$ e $y=0.5\cdot30 +2=17$
+\end{solution}
+\end{parts}
+
+
+\question[1] Hemos salido a medir el edificio. Y hemos obtenido los siguientes datos.\begin{itemize}
+\item La sombra del edificio es de 15.6 metros
+\item La altura de otra persona es 1.80 mts y su sombra es 2.34 mts
+\end{itemize}
+Determina la altura del edifico
+\begin{solution} $\dfrac{x}{1560}=\dfrac{180}{234} \to x=\dfrac{180\cdot1560}{234}= 1200 cm$  \end{solution}
+
+\question Tenemos un tupperware (recipiente de plástico con forma de prisma para guardar alimentos) de dimensiones: 20cm de largo, 10cm de ancho y 8cm de alto:
+\begin{parts}
+\part[1] Si queremos pintar todas sus caras exteriores, ¿cuántos botes de pintura necesitaré si con un bote pinto un metro cuadrado de superficie?
+\begin{solution} (200, 80, 160, 880, 0.088) \end{solution}
+
+\part[1] ¿Cuánta agua cabría  sabiendo que un litro es lo mismo que un decímetro cúbico?
+\begin{solution} (1600.0, 1.6)  \end{solution}
+\end{parts}
+
+
+\addpoints
+
+\end{questions}
+
+\end{document}
