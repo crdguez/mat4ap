@@ -1,0 +1,179 @@
+\documentclass[addpoints,spanish, 12pt,a4paper]{exam}
+\pointpoints{punto}{puntos}
+\hpword{Puntos:}
+\vpword{Puntos:}
+\htword{Total}
+\vtword{Total}
+\hsword{Resultado:}
+\hqword{Ejercicio:}
+\vqword{Ejercicio:}
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes, calc, shapes, arrows, math, babel}
+
+%\printanswers
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{eurosym}
+\usepackage{yhmath}
+%\usepackage[spanish,es-lcroman, es-tabla, es-noshorthands]{babel}
+
+\usepackage{verbatim}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+
+\usepackage{graphicx}
+\graphicspath{{../img/}} 
+
+\newcommand{\class}{Matemáticas 4º Aplicadas}
+\newcommand{\examdate}{\today}
+\newcommand{\examnum}{Funciones y Geometría}
+\newcommand{\tipo}{A}
+
+
+\newcommand{\timelimit}{50 minutos}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
+
+\pagestyle{head}
+\firstpageheader{\includegraphics[width=0.2\columnwidth]{header_left}}{\textbf{Departamento de Matemáticas\linebreak \class}\linebreak \examnum}{\includegraphics[width=0.1\columnwidth]{header_right}}
+\runningheader{\class}{\examnum}{Página \thepage\ of \numpages}
+\runningheadrule
+
+\pointsinrightmargin % Para poner las puntuaciones a la derecha. Se puede cambiar. Si se comenta, sale a la izquierda.
+\extrawidth{-2.4cm} %Un poquito más de margen por si ponemos textos largos.
+\marginpointname{ \emph{\points}}
+
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} }
+\textbf{Nombre:} \makebox[3.5in]{\hrulefill} & \textbf{Fecha:}\makebox[1in]{\hrulefill} \\
+ & \\
+\textbf{Tiempo: \timelimit} & Tipo: \tipo 
+\end{tabular*}
+\rule[2ex]{\textwidth}{2pt}
+Esta prueba tiene \numquestions\ ejercicios. La puntuación máxima es de \numpoints. 
+La nota final de la prueba será la parte proporcional de la puntuación obtenida sobre la puntuación máxima.
+
+\begin{center}
+
+
+\addpoints
+ %\gradetable[h][questions]
+	\pointtable[h][questions]
+\end{center}
+
+\noindent
+
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{questions}
+
+\question Una compañía de teléfonos me cobra una cantidad fija al mes: 1 \euro . Además me cobran 50 céntimos por cada hora de llamadas. Queremos reflejar en forma de función la factura mensual (lo que pago al mes)
+\begin{parts}
+\part[1] ¿Cuáles son la variables dependientes e independientes de la función?
+\begin{solution}
+$x$ = tiempo, $y$ = dinero
+\end{solution}
+\part[1] Haz una tabla de valores que refleje dicha variable
+
+\begin{solution}
+\begin{center}
+\begin{tabular}{|c |c |}\hline
+$x$ & $y$\\ 
+\hline
+$1$&$1.5$\\
+\hline
+$2$&$2$\\
+\hline
+$3$&$2.5$\\
+\hline
+$4$&$3$\\
+\hline
+\end{tabular}
+\end{center}
+\end{solution}
+\part[1] Representa gráficamente los valores anteriores y únelos para determinar la gráfica de la función\\
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm, scale=0.6]
+\draw [color=lightgray,dash pattern=on 1pt off 1pt, xstep=1cm,ystep=1cm] (-3.6,-3.4) grid (20.1,10.1);
+\draw[<->,color=black] (-3.6,0) -- (20.1,0);
+\foreach \x in {-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20}
+\draw[shift={(\x,0)},color=black] (0pt,1pt) -- (0pt,-1pt) node[below] {\footnotesize $\x$};
+\draw[<->,color=black] (0,-3.43158220601634095) -- (0,10.1);
+\foreach \y in {-3,-2,-1,1,2,3,4,5,6,7,8,9,10}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+%\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+%\clip(-0.6129302567150502,-0.43158220601634095) rectangle (9.010648940148005,7.8783927087822985);
+\end{tikzpicture}
+\begin{solution}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm, scale=0.4]
+\draw [color=lightgray,dash pattern=on 1pt off 1pt, xstep=1cm,ystep=1cm] (-3.6,-3.4) grid (20.1,10.1);
+\draw[<->,color=black] (-3.6,0) -- (20.1,0);
+\foreach \x in {-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20}
+\draw[shift={(\x,0)},color=black] (0pt,1pt) -- (0pt,-1pt) node[below] {\footnotesize $\x$};
+\draw[<->,color=black] (0,-3.43158220601634095) -- (0,10.1);
+\foreach \y in {-3,-2,-1,1,2,3,4,5,6,7,8,9,10}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+%\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+%\clip(-0.6129302567150502,-0.43158220601634095) rectangle (9.010648940148005,7.8783927087822985);
+\draw[->, color=red, domain=0  :16 + 0.1]    plot (\x,{1/2*(\x) + 1}) node[right] {};
+\end{tikzpicture}
+
+\end{solution}
+\part[1] Da la expresión analítica (o algebraica) de la función
+\begin{solution} $y=0.5x+1$
+\end{solution}
+\part[1] A partir de la expresión analítica, calcula cuánto me facturarán si un mes hablo 200 horas
+\begin{solution}
+$y=0.5\cdot200+1=101$\euro
+\end{solution} 
+%\part[1] Determina el dominio y el recorrido de la función
+\end{parts}
+
+\question[1] Hemos salido a medir el edificio. Y hemos obtenido los siguientes datos.\begin{itemize}
+\item La sombra del edificio es de 9.23 metros
+\item La altura de una persona es 1.70 mts y su sombra es 2.21 mts
+\item La altura de otra persona es 1.80 mts y su sombra es 2.34 mts
+\end{itemize}
+Determina la altura del edifico
+\begin{solution} $\dfrac{x}{923}=\dfrac{170}{221} \to x=\dfrac{170\cdot923}{221}= 710 cm$  \end{solution}
+
+\question Tenemos un Tupperware de dimensiones: 20cm de largo, 10cm de ancho y 8cm de alto:
+\begin{parts}
+\part[1] Si queremos pintarlo, ¿cuánta pintura necesitaré si con un bote pinto un metro cuadrado de superficie?
+\begin{solution} (200, 80, 160, 880, 0.08800000000000001) \end{solution}
+
+\part[1] ¿Cuántos litros de sopa cabrán en el tupper sabiendo que un litro es lo mismo que un decímetro cúbico?
+\begin{solution} (1600.0, 1.6)  \end{solution}
+
+\part[1] ¿Cuánto pesará el tupper lleno sabiendo que 1 litro de sopa pesa un kilogramo?
+\begin{solution} 1.6 kg  \end{solution}
+
+\end{parts}
+
+%\question Sabemos que la pirámide de Kefrén tiene 136 mts de altura y el lado de la base mide 215 mts:
+%\begin{parts}
+%\part[2] Si queremos pintarlo, ¿cuánta pintura necesitaré si con un bote pinto un metro cuadrado de superficie?
+%\begin{solution}
+%(sqrt(29945),
+% 173.04623659588788,
+% 215*sqrt(29945)/2,
+% 18602.470434057945,
+% 74409.88173623178)
+%\end{solution}
+%\part[1] ¿Cuántos litros cabrían en la pirámide si fuera hueca sabiendo que un litro es lo mismo que un decímetro cúbico?
+%\begin{solution}
+%(2095533, 2095533.0, 2095533000)
+%\end{solution}
+%\end{parts}
+
+
+\addpoints
+
+\end{questions}
+
+\end{document}
