@@ -5,7 +5,7 @@ The pairs match up as follows:
 
 | Edge 1 | Edge 2 |
 |:------:|:------:|
-| $\left(\frac{4}{5}-2\right)$ | $- \frac{89}{120}$ |
+| $\left(\frac{4}{5}-2\right)$ | $- \frac{6}{5}$ |
 | $4: \left(\frac{7}{9}\cdot \frac{6}{5}\cdot \frac{15}{28}\right)-3$ | $5$ |
 | $\frac{3}{2}-\frac{4}{5}:\frac{1}{2}+\frac{3}{4}\cdot\frac{1}{3}$ | $\frac{3}{20}$ |
 | $\frac{1}{6}-\frac{5}{3}\left(\frac{4}{5}-\frac{1}{3}\right)-\frac{1}{2}:\frac{3}{4}$ | $-\frac{23}{18}$ |
