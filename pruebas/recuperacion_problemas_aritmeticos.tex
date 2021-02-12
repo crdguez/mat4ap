@@ -1,0 +1,125 @@
+\documentclass[addpoints,spanish, 12pt,a4paper]{exam}
+\pointpoints{punto}{puntos}
+\hpword{Puntos:}
+\vpword{Puntos:}
+\htword{Total}
+\vtword{Total}
+\hsword{Resultado:}
+\hqword{Ejercicio:}
+\vqword{Ejercicio:}
+
+%\printanswers
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{eurosym}
+\usepackage{yhmath}
+%\usepackage[spanish,es-lcroman, es-tabla, es-noshorthands]{babel}
+
+\usepackage{verbatim}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+
+\usepackage{graphicx}
+\graphicspath{{../img/}} 
+
+\newcommand{\class}{Matemáticas 4º Aplicadas}
+\newcommand{\examdate}{\today}
+\newcommand{\examnum}{Recuperación - Problemas Aritméticos}
+\newcommand{\tipo}{D}
+
+
+\newcommand{\timelimit}{50 minutos}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
+
+\pagestyle{head}
+\firstpageheader{\includegraphics[width=0.2\columnwidth]{header_left}}{\textbf{Departamento de Matemáticas\linebreak \class}\linebreak \examnum}{\includegraphics[width=0.1\columnwidth]{header_right}}
+\runningheader{\class}{\examnum}{Página \thepage\ of \numpages}
+\runningheadrule
+
+\pointsinrightmargin % Para poner las puntuaciones a la derecha. Se puede cambiar. Si se comenta, sale a la izquierda.
+\extrawidth{-2.4cm} %Un poquito más de margen por si ponemos textos largos.
+\marginpointname{ \emph{\points}}
+
+
+\begin{document}
+
+\noindent
+%\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} }
+%\textbf{Nombre:} \makebox[3.5in]{\hrulefill} & \textbf{Fecha:}\makebox[1in]{\hrulefill} \\
+% & \\
+%\textbf{Tiempo: \timelimit} & Tipo: \tipo 
+%\end{tabular*}
+%\rule[2ex]{\textwidth}{2pt}
+%Esta prueba tiene \numquestions\ ejercicios. La puntuación máxima es de \numpoints. 
+%La nota final de la prueba será la parte proporcional de la puntuación obtenida sobre la puntuación máxima. Para la evaluación de pendientes de 3ºESO o 2ºPMAR se tendrán en cuenta los apartados 1, 2, 3 y 6: 
+%
+%\begin{center}
+%
+%
+%\addpoints
+% %\gradetable[h][questions]
+%	\pointtable[h][questions]
+%\end{center}
+
+\noindent
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{questions}
+
+\question Obtén el valor de x en cada caso:
+\begin{parts}
+\part  x = 2\% de 135
+
+\begin{solution}$135\cdot0,02=2,7$\end{solution}
+\part  28\% de x = 15,96
+
+\begin{solution}15,96/0,28=57\end{solution}
+\end{parts}
+\addpoints
+
+
+\question  El precio de un artículo sin IVA es de 315\euro. Si he pagado 365,40\euro, ¿qué porcentaje de IVA me han cargado?
+\begin{solution}
+Se ha pagado de IVA 365,40 - 315 = 50,40 \euro. 50,40/315 = 0,16. 16\%
+\end{solution}
+
+\question  He pagado 35,7\euro por una camisa que tenía un 15\% de rebaja. ¿Cuál era su precio antes de estar rebajada?
+\begin{solution}
+85\% de x = 35,7. 35,7/0,85=42\euro
+\end{solution}
+
+\question  Carlos coloca 18000\euro \   al 3,5\% anual y los mantiene en el banco durante 3 años, eligiendo la modalidad de interés simple. ¿A cuánto ascienden el capital obtenido durante los tres años?
+\begin{solution}
+18000x0,035=630. 630x3=1890. 19890\euro
+\end{solution}
+
+
+\question  Calcula en cuánto se transforman 9500\euro \ colocados al 3,5\% de interés compuesto anual durante 3 años.
+\begin{solution}
+$9500\cdot1,035^3=10532,82$\euro
+\end{solution}
+
+\question  Raquel, María e Isabel han ganado un premio de 8000\euro en un sorteo. Sabiendo que, para comprar los boletos, Raquel puso 5\euro, María 8\euro e Isabel 12\euro, ¿cuánto le corresponderá a cada una del premio que han ganado?
+\begin{solution}
+1600, 2560, 3840\euro
+\end{solution}
+
+
+
+\question Un juguete vale en una juguetería 40 euros. Durante las fiestas navideñas sube un 22\% y una
+vez que éstas han pasado, baja un 9\%. Calcular su precio final y el porcentaje de subida
+respecto al precio inicial
+\begin{solution}
+44.408 y 11.02\%
+\end{solution}
+
+
+\addpoints
+
+\end{questions}
+
+\end{document}
