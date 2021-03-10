@@ -1,0 +1,139 @@
+\documentclass[addpoints,spanish, 12pt,a4paper]{exam}
+\pointpoints{punto}{puntos}
+\hpword{Puntos:}
+\vpword{Puntos:}
+\htword{Total}
+\vtword{Total}
+\hsword{Resultado:}
+\hqword{Ejercicio:}
+\vqword{Ejercicio:}
+\usepackage{pgf,tikz}
+\usepackage{tikzit}
+%\input{sample.tikzstyles}
+\usetikzlibrary{shapes, calc, shapes, arrows, math, babel}
+
+%\printanswers
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{eurosym}
+\usepackage{yhmath}
+%\usepackage[spanish,es-lcroman, es-tabla, es-noshorthands]{babel}
+
+\usepackage{verbatim}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+
+\usepackage{graphicx}
+\graphicspath{{../img/}} 
+
+\newcommand{\class}{Matemáticas 4º Aplicadas}
+\newcommand{\examdate}{\today}
+\newcommand{\examnum}{Funciones y Geometría}
+\newcommand{\tipo}{A}
+
+
+\newcommand{\timelimit}{50 minutos}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
+
+\pagestyle{head}
+\firstpageheader{\includegraphics[width=0.2\columnwidth]{header_left}}{\textbf{Departamento de Matemáticas\linebreak \class}\linebreak \examnum}{\includegraphics[width=0.1\columnwidth]{header_right}}
+\runningheader{\class}{\examnum}{Página \thepage\ of \numpages}
+\runningheadrule
+
+\pointsinrightmargin % Para poner las puntuaciones a la derecha. Se puede cambiar. Si se comenta, sale a la izquierda.
+\extrawidth{-2.4cm} %Un poquito más de margen por si ponemos textos largos.
+\marginpointname{ \emph{\points}}
+
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} }
+\textbf{Nombre:} \makebox[3.5in]{\hrulefill} & \textbf{Fecha:}\makebox[1in]{\hrulefill} \\
+ & \\
+\textbf{Tiempo: \timelimit} & Tipo: \tipo 
+\end{tabular*}
+\rule[2ex]{\textwidth}{2pt}
+Esta prueba tiene \numquestions\ ejercicios. La puntuación máxima es de \numpoints. 
+La nota final de la prueba será la parte proporcional de la puntuación obtenida sobre la puntuación máxima. 
+%Para la evaluación de pendientes de 3ºESO o 2ºPMAR se tendrán en cuenta los apartados 1.a, 1.c, 1.d, 2.a y 4: 
+
+\begin{center}
+
+
+\addpoints
+ %\gradetable[h][questions]
+	\pointtable[h][questions]
+\end{center}
+
+\noindent
+%\textbf{NOTA:} Los problemas se han de resolver mediante ecuaciones o sistemas. Y los ejercicios mediante métodos diferentes a la resolución por tanteo.
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{questions}
+
+
+
+\question[1] Hemos salido a medir el edificio. Y hemos obtenido los siguientes datos.\begin{itemize}
+\item La sombra del edificio es de 9.23 metros
+\item La altura de una persona es 1.70 mts y su sombra es 2.21 mts
+\item La altura de otra persona es 1.80 mts y su sombra es 2.34 mts
+\end{itemize}
+Determina la altura del edifico
+\begin{solution} $\dfrac{x}{923}=\dfrac{170}{221} \to x=\dfrac{170\cdot923}{221}= 710 cm$  \end{solution}
+
+\question Tenemos un Tupperware de dimensiones: 20cm de largo, 10cm de ancho y 8cm de alto:
+\begin{parts}
+\part[1] Si queremos pintarlo por fuera, ¿cuánta superficie hay que pintar?
+\begin{solution} (200, 80, 160, 880, 0.08800000000000001) \end{solution}
+
+\part[1] ¿Cuántos litros de sopa cabrán en el tupper sabiendo que un litro es lo mismo que un decímetro cúbico?
+\begin{solution} (1600.0, 1.6)  \end{solution}
+
+\part[1] ¿Cuánto pesará el tupper lleno sabiendo que 1 litro de sopa pesa un kilogramo?
+\begin{solution} 1.6 kg  \end{solution}
+
+\end{parts}
+
+
+\question Tenemos una piscina con las siguientes dimensiones:
+\begin{center}
+\tikzfig{piscina2}
+\end{center}
+\begin{parts}
+\part[2] Si queremos pintarla, ¿cuántos botes de pintura necesitaré si con un bote pinto 100 metros cuadrados de superficie?
+\begin{solution}
+
+\end{solution}
+\part[1] ¿Cuántos litros necesito para llenarla?
+\begin{solution}
+
+\end{solution}
+\end{parts}
+
+
+\question Sabemos que la pirámide de Kefrén tiene 136 mts de altura y el lado de la base mide 215 mts:
+\begin{parts}
+\part[2] Si queremos pintarla, ¿cuántos botes de pintura necesitaré si con un bote pinto 100 metros cuadrados de superficie?
+\begin{solution}
+(sqrt(29945),
+ 173.04623659588788,
+ 215*sqrt(29945)/2,
+ 18602.470434057945,
+ 74409.88173623178)
+\end{solution}
+\part[1] ¿Cuánto pesará la pirámide si cada metro cúbico de piedra pesa 2500 kg?(Da el resultado en notación científica)
+\begin{solution}
+(2095533, 2095533.0, 2095533000)
+\end{solution}
+\end{parts}
+
+\addpoints
+
+\end{questions}
+
+\end{document}
